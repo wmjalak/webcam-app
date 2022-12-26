@@ -169,7 +169,7 @@ function App() {
         <Row>
           <Col>
             <main>
-              <video className="video"></video>
+              <video className="video" playsInline></video>
             </main>
           </Col>
           <Col sm={4}>
