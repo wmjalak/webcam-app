@@ -100,12 +100,12 @@ function App() {
       let count = 1;
       let cams: Camera[] = [];
       mediaDevices.forEach((mediaDevice) => {
-        if (mediaDevice.kind === "videoinput") {
+        // if (mediaDevice.kind === "videoinput") {
           cams.push({
             id: mediaDevice.deviceId,
             name: mediaDevice.label || `Camera ${count++}`,
           });
-        }
+        // }
       });
       setCameras(cams);
 
@@ -184,7 +184,7 @@ function App() {
               <span className="time-left" id="time-left">
                 {timeLeft / 1000}
               </span>
-              <button onClick={restart}>Restart</button>
+              <button id="restart" className="restart-button" onClick={restart}>Restart</button>
 
               <select
                 name="cameras"

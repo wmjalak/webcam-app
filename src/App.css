@@ -29,11 +29,15 @@
 }
 
 .time-left {
-  font-size: xx-large;
+  font-size: xxx-large;
 }
 
 .video {
   width: 80%;
+}
+
+.restart-button {
+  font-size: xxx-large;
 }
 
 @keyframes App-logo-spin {
